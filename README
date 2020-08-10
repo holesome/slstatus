@@ -1,3 +1,5 @@
+NOTE by holesome: you need the font package font awesome for my particular setup (in the config branch). Otherwise you will not be able to see the icons that I used.
+
 slstatus - suckless status
 ==========================
 slstatus is a suckless status monitor for window managers that use WM_NAME
