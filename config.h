@@ -64,12 +64,12 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ wifi_perc, ": %3s%%  ", "wlp3s0" },
-	{ netspeed_rx, "%sB/s  ", "wlp3s0" },
+	{ netspeed_rx, "%sB/s  ", "enp0s25" },
 	{ run_command, ": %4s |", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ cpu_perc, "[CPU  %s%%]   ", NULL	      },
 	{ ram_perc, "[RAM  %s%%]   ", NULL	      },
 	// { datetime, "%s",           "%F %T" },
 	{ battery_perc, "\uf241 %s", "BAT0" },
-	{ battery_state, "%s   ", "BAT0" },
+	{ battery_state, "%s", "BAT0" },
 	{ datetime, "%s", "%a %e %b %Y %R %Z" }, 
 };
