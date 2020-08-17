@@ -66,7 +66,7 @@ static const struct arg args[] = {
 	{ wifi_perc, ": %3s%%  ", "wlp3s0" },
 	{ netspeed_rx, "%sB/s  ", "wlp3s0" },
 	// { run_command, ": %4s |", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ run_command, ": %4s |", "pactl list sinks | egrep "Sink #|State:|Volume:" | awk '/RUNNING/||/Volume:/||/Sink #/ {print $2,$5}' | xargs | egrep -o "RUNNING front-left: ...." | awk '{print $3}'" },
+	{ run_command, ": %4s |", "pactl list sinks | egrep \"Sink #|State:|Volume:\" | awk '/RUNNING/||/Volume:/||/Sink #/ {print $2,$5}' | xargs | egrep -o \"RUNNING front-left: ....\" | awk '{print $3}'" },
 	{ cpu_perc, "[CPU  %s%%]   ", NULL	      },
 	{ ram_perc, "[RAM  %s%%]   ", NULL	      },
 	// { datetime, "%s",           "%F %T" },
